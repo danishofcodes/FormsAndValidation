@@ -26,9 +26,9 @@ function App() {
   }
   return (
     <>
-      <div>
+      <div className='flex'>
         <button className={`tabbutton ${activeTab === 'signup' ? 'activetab' : ''}`} onClick={handleClick} value="signup">Signup Form</button>
-        <button className={`tabbutton ${activeTab === 'newsletter' ? 'activetab' : ''}`} onClick={handleClick} value="newsletter">Newsletter</button>
+        <button className={`tabbutton ${activeTab === 'newsletter' ? 'activetab' : ''}`} onClick={handleClick} value="newsletter">Newsletter Form</button>
         <button className={`tabbutton ${activeTab === 'personaldata' ? 'activetab' : ''}`} onClick={handleClick} value="personaldata">Personal Details Form</button>
         {/* <button></button> */}
       </div>

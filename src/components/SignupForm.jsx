@@ -18,7 +18,7 @@ export default function SignupForm() {
         const errors = {};
         if (!values.password) {
           errors.password = 'Required';
-        } else if (values.firstName.length > 15) {
+        } else if (values.password.length > 15) {
           errors.password = 'Must be 15 characters';
         }
       

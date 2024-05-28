@@ -1,3 +1,5 @@
+import { faCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 export default function PersonalDetailsForm() {
@@ -39,7 +41,7 @@ export default function PersonalDetailsForm() {
                     </div>
 
                    
-                    <button type="submit" className="savesubmit">Save and Submit</button>
+                    <button type="submit" className="savesubmit"><FontAwesomeIcon icon={faCheckCircle}/>    Save and Submit</button>
                 </form>
             </div>
 

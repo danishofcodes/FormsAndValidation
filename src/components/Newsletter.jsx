@@ -15,15 +15,13 @@ export default function Newsletter() {
             <div className="flex">
                 <div className='m-auto'>
                     <div className="flex">
-                        <div className="iconcont">
-                            <FontAwesomeIcon icon={faEnvelope}  style={{ color: '#fff' }}/>
-                        </div>
                         <input className='formInputNewsletter' type="email" name="email" placeholder='your email' />
+                        <button type="submit" className="iconcont"> <FontAwesomeIcon icon={faEnvelope}  style={{ color: '#fff' }}/>Subscribe</button>
                     </div>
                 </div>
             </div>
             <div>
-                <div className="" style={{ width: "34em", margin: "10px auto" }}>
+                <div className="" style={{ maxWidth: "34em", margin: "10px auto" }}>
 
                     <input type="checkbox" className='' />
                     <label htmlFor="checkbox">*By entering your email you agree to receive the Hostinger newsletter. You can unsubscribe at any time. See our privacy policy.
