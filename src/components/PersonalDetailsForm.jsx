@@ -4,8 +4,7 @@ import { useFormik } from 'formik'
 import * as Yup from 'yup';
 import React, { useState } from 'react'
 import SelectCountry from './SelectCountry';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+
 
 export default function PersonalDetailsForm() {
     const [confirmResetModal, setConfirmResetModal] = useState(false);
@@ -50,7 +49,7 @@ export default function PersonalDetailsForm() {
             countryname: '',
             phoneNumber: '',
             email: '',
-            dateOfBirth: '',
+            dateOfBirth: '1998-12-31',
             residentialAddress: ''
         },
         validationSchema: SignupSchema,
@@ -99,15 +98,8 @@ export default function PersonalDetailsForm() {
                         </div>
                         <div class="inputField">
                             <label for="dateOfBirth">Date Of Birth</label>
-                            {/* <input className='formInput' type="date" id="dateOfBirth" name="dateOfBirth" value={formik.values.dateOfBirth} placeholder='DOB' onChange={formik.handleChange} onBlur={formik.handleBlur} /> */}
-                            <DatePicker className='formInput dob' id="dateOfBirth" name="dateOfBirth" selected={formik.values.dateOfBirth} // Use `selected` instead of `value`
-                                placeholderText='Select Date Of Birth'
-                                dateFormat="yyyy-MM-dd"
-                                onChange={date => formik.setFieldValue('dateOfBirth', date)}
-                                minDate={new Date('1900-01-01')} 
-                                maxDate={new Date('2018-12-31')}
-                                onBlur={formik.handleBlur}
-                            />
+                            <input className='formInput' type="date" id="dateOfBirth" name="dateOfBirth" value={formik.values.dateOfBirth} placeholder='DOB' onChange={formik.handleChange} onBlur={formik.handleBlur}  min="1910-01-01" max="2018-12-31" />
+                            
                             {formik.touched.dateOfBirth && formik.errors.dateOfBirth ? <div className='error'>{formik.errors.dateOfBirth}</div> : null}
                         </div>
 
