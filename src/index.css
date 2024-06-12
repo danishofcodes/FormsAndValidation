@@ -375,7 +375,9 @@ select.formInput {
   flex: 1;
 }
 
-
+.formInput.dob{
+  width: 100%;
+}
 
 
 @media (min-width: 768px) {
