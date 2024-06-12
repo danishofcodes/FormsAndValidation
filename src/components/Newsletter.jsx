@@ -31,7 +31,7 @@ export default function Newsletter() {
             <h3>Newsletter</h3>
             <h2>  Stay up-to-date with the latest industry trends</h2>
             <h5>Subscribe to get the top-notch practical tips for mastering your website.</h5>
-            <div className="flex">
+            <div className="flex flex-wrap">
                 <div className='m-auto'>
                     <form onSubmit={formik.handleSubmit}>
                         <div className="flex">

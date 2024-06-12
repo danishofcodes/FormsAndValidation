@@ -26,7 +26,7 @@ function App() {
   }
   return (
     <>
-      <div className='flex'>
+      <div className='flex flex-wrap'>
         <button className={`tabbutton ${activeTab === 'signup' ? 'activetab' : ''}`} onClick={handleClick} value="signup">Signup Form</button>
         <button className={`tabbutton ${activeTab === 'newsletter' ? 'activetab' : ''}`} onClick={handleClick} value="newsletter">Newsletter Form</button>
         <button className={`tabbutton ${activeTab === 'personaldata' ? 'activetab' : ''}`} onClick={handleClick} value="personaldata">Personal Details Form</button>
