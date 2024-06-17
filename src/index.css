@@ -172,11 +172,8 @@ select.formInput {
 
 }
 
-.inputField {
-  flex: 1 1 0%;
-  /* Grow to fill available space equally */
+.inputField{
   margin: 10px 0;
-  /* Consistent spacing */
 }
 
 
